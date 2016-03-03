@@ -1,0 +1,6 @@
+<% @environments.each do |environ, info| %>
+  <h1><%= info[:population] %> of our animals live(s) in/on the <%= environ %></h1>
+  <div class="row">
+    <%= render info[:inhabitants] %>
+  </div>
+<% end %>
